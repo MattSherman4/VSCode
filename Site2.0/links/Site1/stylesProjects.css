@@ -1,0 +1,361 @@
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    font-family: serif, Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif, monospace;
+    background-image: url('images/Background1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100% 100%;
+    background-color: black;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 13px;
+}
+
+/* --- LEFT --- */
+div.left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+div.left .nav p {
+    font-family: monospace;
+    font-weight: bold;
+    padding-left: 2rem;
+}
+
+div.left img {
+    margin: auto;
+}
+
+
+/* --- RIGHT --- */
+div.right {
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+}
+
+div.right .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+div.right .nav a {
+    width: 20%;
+    padding: 0.8rem 0;
+    margin-bottom: 0.5rem;
+    border-left: 3px solid grey;
+    display: flex;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+}
+
+div.right .nav a:first-of-type {
+    border-left: 0;
+}
+
+
+/* --- CENTER --- */
+div.centerProjects {
+    background-color: white;
+    width: 75%;
+    margin: auto;
+    justify-content: center;
+}
+
+div.centerProjects .blog{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    padding-top: .3rem;
+}
+
+div.centerProjects .blog a {
+    padding: 0.8rem 0;
+    border-top: 2.5px solid grey;
+    color: black;
+    text-decoration: none;
+    display: none;
+}
+
+div.centerProjects .blog .show {
+    display: flex;
+}
+
+div.centerProjects .filters {
+    display: flex;
+}
+
+div.centerProjects .filter {
+    margin-right: 0.3rem;
+    padding: 0.1rem 0.1rem;
+    border: 1px solid black;
+    border-radius: 15%;
+}
+
+div.centerProjects .filter:hover {
+    background-color: #ddd;
+  }
+  
+div.centerProjects .filter.active {
+    background-color: #666;
+    color: white;
+}
+
+div.centerProjects .info {
+    justify-content: space-between;
+}
+
+div.centerProjects .info, .author, .tags {
+    display: flex;
+    padding-right: 0.5rem;
+}
+
+div.centerProjects .blog .tags p {
+    margin-right: 0.3rem;
+    padding: 0.1rem 0.1rem;
+    border: 1px solid black;
+    border-radius: 15%;
+}
+
+div.centerProjects .blog .tags p:first-of-type {
+    border: 0;
+} 
+
+div.centerProjects .blog .blog_content {
+    width: 100%;
+}
+
+div.centerProjects .blog .posttitle {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 0.2rem;
+    word-wrap: break-word;
+    display:flex;
+    line-height: normal;
+}
+
+div.centerProjects .blog .headline {
+    font-size: 18px;
+    font-style: italic;
+    padding: 0 0.2rem;
+    word-wrap: break-word;
+    display:flex;
+    line-height: normal;
+}
+
+div.centerProjects .blog .abstract {
+    font-size: 14px;
+    word-wrap: break-word;
+    display:flex;
+    padding-top: 1rem;
+    padding-left: 3.7rem;
+    padding-right: 1rem;
+    text-indent: -3.5rem;
+}
+
+
+div.centerProjects .blog .icon {
+    object-fit: cover;
+    width: auto;
+    height: 40px;
+    padding: 0 0.5rem;
+    border-radius: 50%;
+}
+
+div.centerProjects .blog .icontext {
+    font-size: 10px;
+    padding: 0.55rem 0.1rem;
+    width: 100%;
+    color: #5A5A5A;
+}
+
+div.centerProjects .blog .thumbnail {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    padding: 0 0.5rem;
+    border-radius: 20%;
+}
+
+/**************** MEDIA TAGS ****************/
+/**************** 2000 ****************/
+@media only screen and (max-width: 2000px) {
+    .textProjects { 
+       font-size: 16px; 
+    }
+    div.centerProjects .blog .icon {
+        height: 50px;
+    }
+    
+    div.centerProjects .blog .icontext {
+        font-size: 12px;
+    }
+
+    div.centerProjects .blog .posttitle {
+        font-size: 30px;
+    }
+    
+    div.centerProjects .blog .headline {
+        font-size: 24px;
+    }
+    
+    div.centerProjects .blog .abstract {
+        font-size: 20px;
+    }
+
+    div.centerProjects .blog .thumbnail {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/**************** Normal 1600 ****************/
+@media only screen and (max-width: 1600px) {
+    .textProjects { 
+       font-size: 14px; 
+    }
+
+    div.centerProjects .blog .icon {
+        height: 40px;
+    }
+    
+    div.centerProjects .blog .icontext {
+        font-size: 10px;
+    }
+
+    div.centerProjects .blog .posttitle {
+        font-size: 24px;
+    }
+    
+    div.centerProjects .blog .headline {
+        font-size: 18px;
+    }
+    
+    div.centerProjects .blog .abstract {
+        font-size: 14px;
+    }
+
+    div.centerProjects .blog .thumbnail {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/**************** 1200 ****************/
+@media only screen and (max-width: 1200px) {
+    .textProjects { 
+       font-size: 11px; 
+    }
+
+    div.centerProjects .blog .icon {
+        height: 30px;
+    }
+    
+    div.centerProjects .blog .icontext {
+        font-size: 9px;
+    }
+
+    div.centerProjects .blog .posttitle {
+        font-size: 20px;
+    }
+    
+    div.centerProjects .blog .headline {
+        font-size: 14px;
+    }
+    
+    div.centerProjects .blog .abstract {
+        font-size: 12px;
+    }
+
+    div.centerProjects .blog .thumbnail {
+        width: 175px;
+        height: 175px;
+    }
+}
+
+/**************** 930 ****************/
+@media only screen and (max-width: 930px) {
+    div.right .nav {
+        justify-content: center;
+    }
+
+    .textProjects { 
+       font-size: 10px; 
+    }
+
+    div.centerProjects .blog .iconthumbnail {
+        height: 40px;
+        border-radius: 20%;
+    }
+    
+    div.centerProjects .blog .icontext {
+        font-size: 8px;
+    }
+
+    div.centerProjects .blog .posttitle {
+        font-size: 16px;
+    }
+    
+    div.centerProjects .blog .headline {
+        font-size: 12px;
+    }
+    
+    div.centerProjects .blog .abstract {
+        font-size: 10px;
+    }
+
+    div.centerProjects .blog .thumbnail {
+        width: 150px;
+        height: 150px;
+    }
+
+    div.right .nav a {
+        font-size: 13px;
+    }
+}
+
+/**************** LARGE ****************/
+@media only screen and (min-width: 2001px) {
+    .textProjects { 
+       font-size: 18px; 
+    }
+    div.centerProjects .blog .icon {
+        height: 60px;
+    }
+    
+    div.centerProjects .blog .icontext {
+        font-size: 14px;
+    }
+
+    div.centerProjects .blog .posttitle {
+        font-size: 36px;
+    }
+    
+    div.centerProjects .blog .headline {
+        font-size: 30px;
+    }
+    
+    div.centerProjects .blog .abstract {
+        font-size: 26px;
+    }
+
+    div.centerProjects .blog .thumbnail {
+        width: 300px;
+        height: 300px;
+    }
+}

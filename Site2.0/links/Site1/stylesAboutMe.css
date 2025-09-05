@@ -1,0 +1,202 @@
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    font-family: serif, Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif, monospace;
+    background-image: url('images/Background1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100% 100%;
+    background-color: black;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 13px;
+}
+
+/* --- LEFT --- */
+div.left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+div.left .nav p {
+    font-family: monospace;
+    font-weight: bold;
+    padding-left: 2rem;
+}
+
+div.left img {
+    margin: auto;
+}
+
+
+/* --- RIGHT --- */
+div.right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+div.right .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+div.right .nav a {
+    width: 20%;
+    padding: 0.8rem 0;
+    margin-bottom: 0.5rem;
+    border-left: 3px solid grey;
+    display: flex;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+}
+
+div.right .nav a:first-of-type {
+    border-left: 0;
+}
+
+
+/* ABOUT ME */
+div.aboutmebox {
+    justify-content: center;
+}
+
+div.aboutMe {
+    background-color: white; 
+}
+
+div img {
+    height: 100%;
+    width: 100%;
+}
+
+div {
+    line-height: normal;
+}
+
+div .text {
+    font-size: 14px;
+    padding: 0 1rem;
+}
+
+div .titleAboutMe {
+    font-size: 36px;
+    font-weight: bold;
+    word-wrap: break-word;
+    text-align: center;
+    text-decoration: underline;
+}
+
+div .socials {
+    width: 130px;
+    height: 100px;
+    padding: 0 1rem;
+}
+
+
+
+
+/**************** MEDIA TAGS ****************/
+/**************** 2000 ****************/
+@media only screen and (max-width: 2000px) {
+    div .text {
+        font-size: 16px;
+    }
+    div .titleAboutMe {
+        font-size: 48px;
+    }
+    div .socials {
+        width: 150px;
+        height: 120px;
+    }
+}
+
+/**************** Normal 1600 ****************/
+@media only screen and (max-width: 1600px) {
+    div .text {
+        font-size: 14px;
+    }
+    div .titleAboutMe {
+        font-size: 36px;
+    }
+    div .socials {
+        width: 130px;
+        height: 100px;
+    }
+}
+
+/**************** 1200 ****************/
+@media only screen and (max-width: 1200px) {
+    div .text {
+        font-size: 14px;
+    }
+    div .titleAboutMe {
+        font-size: 36px;
+    }
+    div .socials {
+        width: 130px;
+        height: 100px;
+    }
+}
+
+/**************** 930 ****************/
+@media only screen and (max-width: 930px) {
+    div .text {
+        font-size: 10px;
+    }
+    div .titleAboutMe {
+        font-size: 24px;
+    }
+    div .socials {
+        width: 80px;
+        height: 60px;
+    }
+
+    div.right .nav a {
+        font-size: 13px;
+    }
+}
+
+/**************** 576px  Extra Small ****************/
+@media only screen and (max-width: 576px) {
+    div .text {
+        font-size: 13px;
+    }
+    
+    div .titleAboutMe {
+        font-size: 32px;
+    }
+
+    div .socials {
+        width: 100px;
+        height: 70px;
+    }
+}
+
+/**************** LARGE ****************/
+@media only screen and (min-width: 2001px) {
+    div .text {
+        font-size: 16px;
+    }
+    div .titleAboutMe {
+        font-size: 48px;
+    }
+    div .socials {
+        width: 150px;
+        height: 120px;
+    }
+}
+

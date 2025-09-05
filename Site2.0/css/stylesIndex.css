@@ -1,0 +1,51 @@
+div.top {
+    background-color: darkgrey;
+    position: relative;
+    height: 75vh;
+    color: #000435;
+    width: 100vw;
+    padding: 0%;
+}
+
+.name {
+    top: 30%;
+    left: 30%;
+    text-indent: -50%;
+    margin: 0%;
+    display: flex;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.profilePic {
+    position: relative;
+    display: flex;
+    margin-top: 10vh;
+    height: 50vh;
+    align-items: center;
+}
+
+.right .descTitle {
+    text-align: left;
+}
+
+.right .descP {
+    margin-right: 5%;
+    text-align: left;
+}
+
+.AboutMeIndex {
+    color: #000435;
+    margin: 0% 10% 3.5% 10%;
+    text-align: center;
+    font-size: 125%;
+}
+
+/* .projectsRow {
+    padding: 3px;
+    border: 3px solid #000;
+} */

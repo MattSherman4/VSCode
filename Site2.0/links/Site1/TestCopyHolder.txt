@@ -1,0 +1,107 @@
+div.centerProjects .blog a {
+    padding: 0.8rem 0;
+    border-top: 2.5px solid grey;
+    color: black;
+    text-decoration: none;
+    display: none;
+}
+
+div.centerProjects .blog .show {
+    display: flex;
+}
+
+div.centerProjects .filters {
+    display: flex;
+}
+
+div.centerProjects .filter {
+    margin-right: 0.3rem;
+    padding: 0.1rem 0.1rem;
+    border: 1px solid black;
+    border-radius: 15%;
+}
+
+div.centerProjects .filter:hover {
+    background-color: #ddd;
+  }
+  
+div.centerProjects .filter.active {
+    background-color: #666;
+    color: white;
+}
+
+div.centerProjects .info {
+    justify-content: space-between;
+}
+
+div.centerProjects .info, .author, .tags {
+    display: flex;
+    padding-right: 0.5rem;
+}
+
+div.centerProjects .blog .tags p {
+    margin-right: 0.3rem;
+    padding: 0.1rem 0.1rem;
+    border: 1px solid black;
+    border-radius: 15%;
+}
+
+div.centerProjects .blog .tags p:first-of-type {
+    border: 0;
+} 
+
+div.centerProjects .blog .blog_content {
+    width: 100%;
+}
+
+div.centerProjects .blog .posttitle {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 0.2rem;
+    word-wrap: break-word;
+    display:flex;
+    line-height: normal;
+}
+
+div.centerProjects .blog .headline {
+    font-size: 18px;
+    font-style: italic;
+    padding: 0 0.2rem;
+    word-wrap: break-word;
+    display:flex;
+    line-height: normal;
+}
+
+div.centerProjects .blog .abstract {
+    font-size: 14px;
+    word-wrap: break-word;
+    display:flex;
+    padding-top: 1rem;
+    padding-left: 3.7rem;
+    padding-right: 1rem;
+    text-indent: -3.5rem;
+}
+
+
+div.centerProjects .blog .icon {
+    object-fit: cover;
+    width: auto;
+    height: 40px;
+    padding: 0 0.5rem;
+    border-radius: 50%;
+}
+
+div.centerProjects .blog .icontext {
+    font-size: 10px;
+    padding: 0.55rem 0.1rem;
+    width: 100%;
+    color: #5A5A5A;
+}
+
+div.centerProjects .blog .thumbnail {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    padding: 0 0.5rem;
+    border-radius: 20%;
+}

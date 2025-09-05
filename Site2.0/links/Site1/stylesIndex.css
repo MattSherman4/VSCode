@@ -1,0 +1,448 @@
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    font-family: serif, Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif, monospace;
+    background-color: black;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 13px;
+}
+
+/* --- LEFT --- */
+div.left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/BackgroundL.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% auto;
+}
+
+div.left .nav p {
+    font-family: monospace, Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    padding-left: 2rem;
+}
+
+div.left img {
+    margin: auto;
+    width: auto;
+    height: 70%;
+}
+
+
+/* --- RIGHT --- */
+div.right {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-image: url('images/BackgroundR.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+div.right .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+div.right .nav a {
+    width: 20%;
+    padding: 0.8rem 0;
+    margin-bottom: 0.5rem;
+    border-left: 3px solid grey;
+    display: flex;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+}
+
+div.right .nav a:first-of-type {
+    border-left: 0;
+}
+
+
+div.right .box{
+    background-color: white;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    width: 80%;
+    height: 50%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    border-radius: 15%;
+    border: 3px solid grey;
+    overflow: hidden;
+}
+
+div.right .box .scroll{
+    height: 100%;
+    overflow-y: scroll;
+}
+
+div.right .box .featuredarticles{
+    color: black;
+    text-decoration: none;
+    font-size: 26px;
+    text-align: center;
+    text-decoration: underline;
+    line-height: normal;
+}
+
+div.right .blog{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    padding-top: .3rem;
+}
+
+div.right .blog a {
+    /* padding: 0.8rem 0;
+    border-top: 2.5px solid grey; */
+    color: black;
+    text-decoration: none;
+    /* display: none; */
+}
+
+div.right .blog .show {
+    display: flex;
+}
+
+div.right .filters {
+    display: flex;
+}
+
+div.right .blog .tags p {
+    margin-right: 0.3rem;
+    padding: 0.1rem 0.1rem;
+    border: 1px solid black;
+    border-radius: 15%;
+}
+
+div.right .blog .tags p:first-of-type {
+    border: 0;
+} 
+
+div.right .blog .blog_content {
+    width: 100%;
+}
+
+div.right .blog .icon {
+    object-fit: cover;
+    /* width: 50px; */
+    height: 50px;
+    padding: 0 0.5rem;
+    border-radius: 50%;
+}
+
+div.right .blog .icontext {
+    font-size: 12px;
+    padding: 0.55rem 0.1rem;
+    width: 100%;
+    color: #5A5A5A;
+}
+ 
+div.right .blog .thumbnail {
+    object-fit: cover;
+    width: 110px;
+    height: 140px;
+    padding: 0 0.5rem;
+    border-radius: 20%;
+    float: left;
+}
+
+div.right .blog .posttitle {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 0.2rem;
+    word-wrap: break-word;
+    display:flex;
+    line-height: normal;
+}
+
+div.right .blog .headline {
+    font-size: 16px;
+    font-style: italic;
+    padding: 0 0.2rem;
+    word-wrap: break-word;
+    display:flex;
+    line-height: normal;
+}
+
+div.right .blog .abstract {
+    font-size: 12px;
+    word-wrap: break-word;
+    display:flex;
+    padding-top: 1rem;
+    padding-left: 3.7rem;
+    padding-right: 1rem;
+    text-indent: -3.5rem;
+}
+
+/* -------------- SLIDE SHOW -------------- */
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    display: flex;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    /* height: 100%; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Slides */
+.mySlides {
+    display: none;
+    height: 20px;
+    padding: 80px;
+    text-align: center;
+}
+
+.mySlidesImages {
+    height: unset;
+    padding-top: 0px;
+    padding-top: 0px;
+}
+
+p.mySlidesText {
+    line-height: normal;
+    font-size: 16px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+}
+
+/* The dots/bullets/indicators */
+.dot-container {
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/**************** MEDIA TAGS ****************/
+/**************** 2000 ****************/
+@media only screen and (max-width: 2000px) {
+    .textProjects { 
+       font-size: 16px; 
+    }
+    div.centerProjects .blog .icon {
+        height: 50px;
+    }
+    
+    div.centerProjects .blog .icontext {
+        font-size: 12px;
+    }
+
+    div.centerProjects .blog .posttitle {
+        font-size: 30px;
+    }
+    
+    div.centerProjects .blog .headline {
+        font-size: 24px;
+    }
+    
+    div.centerProjects .blog .abstract {
+        font-size: 20px;
+    }
+
+    div.centerProjects .blog .thumbnail {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/**************** Normal 1600 ****************/
+@media only screen and (max-width: 1600px) {
+    .textProjects { 
+       font-size: 14px; 
+    }
+
+    div.centerProjects .blog .icon {
+        height: 40px;
+    }
+    
+    div.centerProjects .blog .icontext {
+        font-size: 10px;
+    }
+
+    div.centerProjects .blog .posttitle {
+        font-size: 24px;
+    }
+    
+    div.centerProjects .blog .headline {
+        font-size: 18px;
+    }
+    
+    div.centerProjects .blog .abstract {
+        font-size: 14px;
+    }
+
+    div.centerProjects .blog .thumbnail {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/**************** 1200 ****************/
+@media only screen and (max-width: 1200px) {
+    .textProjects { 
+       font-size: 11px; 
+    }
+
+    div.centerProjects .blog .icon {
+        height: 30px;
+    }
+    
+    div.centerProjects .blog .icontext {
+        font-size: 9px;
+    }
+
+    div.centerProjects .blog .posttitle {
+        font-size: 20px;
+    }
+    
+    div.centerProjects .blog .headline {
+        font-size: 14px;
+    }
+    
+    div.centerProjects .blog .abstract {
+        font-size: 12px;
+    }
+
+    div.centerProjects .blog .thumbnail {
+        width: 175px;
+        height: 175px;
+    }
+}
+
+/**************** 930 ****************/
+@media only screen and (max-width: 930px) {
+    div.right .nav {
+        justify-content: center;
+    }
+
+    .textProjects { 
+       font-size: 10px; 
+    }
+
+    div.centerProjects .blog .iconthumbnail {
+        height: 40px;
+        border-radius: 20%;
+    }
+    
+    div.centerProjects .blog .icontext {
+        font-size: 8px;
+    }
+
+    div.centerProjects .blog .posttitle {
+        font-size: 16px;
+    }
+    
+    div.centerProjects .blog .headline {
+        font-size: 12px;
+    }
+    
+    div.centerProjects .blog .abstract {
+        font-size: 10px;
+    }
+
+    div.centerProjects .blog .thumbnail {
+        width: 150px;
+        height: 150px;
+    }
+
+    div.right .nav a {
+        font-size: 13px;
+    }
+}
+
+/**************** LARGE ****************/
+@media only screen and (min-width: 2001px) {
+    .textProjects { 
+       font-size: 18px; 
+    }
+    div.centerProjects .blog .icon {
+        height: 60px;
+    }
+    
+    div.centerProjects .blog .icontext {
+        font-size: 14px;
+    }
+
+    div.centerProjects .blog .posttitle {
+        font-size: 36px;
+    }
+    
+    div.centerProjects .blog .headline {
+        font-size: 30px;
+    }
+    
+    div.centerProjects .blog .abstract {
+        font-size: 26px;
+    }
+
+    div.centerProjects .blog .thumbnail {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+

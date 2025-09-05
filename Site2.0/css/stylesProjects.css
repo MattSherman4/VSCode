@@ -1,0 +1,41 @@
+.title {
+    margin-bottom: 1%;
+    font-size: 6vh;
+}
+
+.projectsRow {
+    margin: 0 10% 0 10%;
+    height: fit-content;
+    /* border-bottom: 3px solid;
+    border-color: darkgrey; */
+}
+
+.projects {
+    padding-bottom: 2%;
+    margin-bottom: 1%;
+}
+
+.subtitle {
+    color: #000435;
+    margin: 0% 7% 2% 7%;
+    text-align: center;
+    font-size: 125%;
+}
+
+.projectContainer {
+    color: #000435;
+    margin: 0% 3% 2% 3%;
+}
+
+.subheader {
+    text-align: center;
+    display: grid;
+}
+
+.empty_box {
+    border-left: 0;
+}
+
+.empty_box:hover {
+    background: none;
+}

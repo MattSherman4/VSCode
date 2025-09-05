@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="theme-color" content="#d4bcba">
+        <title>Matthew Sherman - Projects</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="projectsGrid.css">
+    </head>
+
+    <body>
+        <div class = 'container-fluid h-100'>
+            <div class="row">    
+                <div class="col d-none d-sm-block" style="padding: 0;">
+                    <div class="left">
+                        <div class="nav">
+                            <p class="textProjects">MATTHEW SHERMAN | DATA ANALYST</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col" style="padding: 0;">
+                    <div class="right">
+                        <div class="nav">
+                            <a href="index.html">Home</a>
+                            <a href="projects.html">Projects</a>
+                            <a href="aboutme.html">About Me</a>
+                            <a href="Matthew Sherman Resume.pdf" target="_blank">Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row h-100">
+                <div class="col" style="padding: 0;">
+                    <div class = "centerProjects">
+                        <div class = "row view">
+                            View:
+                            <img class = "viewicon" src='images/projectsList.png' alt="Projects List">
+                            <img class = "viewicon" src='images/projectsGrid.jpg' alt="Projects Grid">
+                        </div>
+                        <div class = "blog">
+                            <div class = "row g-2 mt-3 h-50">
+                                <!-- Immaculate Grid -->
+                                <div class="col">
+                                    <div class="projBlock">
+                                        <img class = "thumbnail" src='images/TransactionsPlot.png' alt="Thumbnail6">
+                                        <div class = "title">"NFL Transactions and Immaculate Grid Guide"</div>
+                                        <div class = "skills">Database Merging, App Making, Plotly</div>
+                                        <div class = "desc">Track player movement since 2000 or cheat your way through the Immaculate Grid game.</div>
+                                    </div>
+                                </div>
+                                <!-- Sprawlball NFL -->
+                                <div class="col c">
+                                    <div class="projBlock">
+                                        <img class = "thumbnail" src='images/JalenHurts.jpg' alt="Jalen Hurts - TIM NWACHUKWU/GETTY IMAGES">
+                                        <div class = "title">"Sprawlball NFL"</div>
+                                        <div class = "skills">Image Scraping, GIS, Topography</div>
+                                        <div class = "desc">Utilizing Geographical Information Systems for the NFL's benefit.</div>
+                                    </div>
+                                </div>
+                                <!-- Quarterback Consistency -->
+                                <div class="col">
+                                    <div class="projBlock">
+                                        <img class = "thumbnail" src='images/TuaTagovailoa.jpg' alt="Tua Tagovailoa - MICHAEL REAVES/GETTY IMAGES">
+                                        <div class = "title">"A New Stat: QB Consistency"</div>
+                                        <div class = "skills">New Statistics, Data Management, Data Analysis</div>
+                                        <div class = "desc">Is your favorite quarterback prone to break-out games, break-down games, or just plain consistency?</div>
+                                    </div>
+                                </div>
+
+                             </div>
+                             <div class = "row g-2 mt-3 h-50">
+                                <!-- QB by WR -->
+                                <div class="col">
+                                    <div class="projBlock">
+                                        <img class = "thumbnail" src='images/KennyPickett.jpg' alt="Kenny Pickett - MATT FREED/POST-GAZETTE">
+                                        <div class = "title">"Scouting QBs by Scouting Their WRs"</div>
+                                        <div class = "skills">Data Cleaning, Causation, Violin Graphs</div>
+                                        <div class = "desc">The correlation and causation of the success for quarterbacks and wide receivers.</div>
+                                    </div>
+                                </div>
+                                <!-- Data Science of Scouting -->
+                                <div class="col c">
+                                    <div class="projBlock">
+                                        <img class = "thumbnail" src='images/TomBrady.jpg' alt="Tom Brady - ALAN WARREN/ANN ARBOR NEWS">
+                                        <div class = "title">"The Data Science of Scouting Quarterbacks"</div>
+                                        <div class = "skills">Large Data, Heatmaps, Histograms</div>
+                                        <div class = "desc">A conglomerate of data, all about the quarterback position.</div>
+                                    </div>
+                                </div>
+                                <!-- Blank -->
+                                <div class="col c">
+                                    <div class="projBlock">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+            // Add the "show" class to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+                RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+            }
+        }
+
+        function myEventHandler(e) {
+            if (!e)
+                e = window.event;
+
+            //IE9 & Other Browsers
+            if (e.stopPropagation) {
+                e.stopPropagation();
+                e.preventDefault();
+            }
+            //IE8 and Lower
+            else {
+                e.cancelBubble = true;
+            }
+        }
+
+        // Show filtered elements
+        function AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        // Hide elements that are not selected
+        function RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        } 
+
+        // Add active class to the current control button (highlight it)
+        var filters = document.getElementsByClassName("filters");
+        var filter = filters[0].getElementsByClassName("filter");
+        for (var i = 0; i < filter.length; i++) {
+            filter[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+</html>

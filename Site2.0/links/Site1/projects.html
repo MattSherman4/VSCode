@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="theme-color" content="#d4bcba">
+        <title>Matthew Sherman - Projects</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesProjects.css">
+    </head>
+
+    <body>
+        <div class = 'container-fluid'>
+            <div class="row">    
+                <div class="col d-none d-sm-block" style="padding: 0;">
+                    <div class="left">
+                        <div class="nav">
+                            <p class="textProjects">MATTHEW SHERMAN | DATA ANALYST</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col" style="padding: 0;">
+                    <div class="right">
+                        <div class="nav">
+                            <a href="index.html">Home</a>
+                            <a href="projects.html">Projects</a>
+                            <a href="aboutme.html">About Me</a>
+                            <a href="Matthew Sherman Resume.pdf" target="_blank">Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="padding: 0;">
+                    <div class = "centerProjects">
+                        <div class = "filters">
+                            <p>Filter: &nbsp</p>
+                            <p id="all" class="filter active textProjects" onclick="filterSelection('all')">All</p>
+                            <p id="btc" class="filter textProjects" onclick="filterSelection('btc')">BTC</p>
+                            <p id="charts" class="filter textProjects" onclick="filterSelection('charts')">Charts</p>
+                            <p id="da" class="filter textProjects d-none d-sm-block" onclick="filterSelection('da')">Data Analysis</p>
+                            <p id="da" class="filter textProjects d-block d-sm-none" onclick="filterSelection('da')">DA</p>
+                            <p id="football" class="filter textProjects" onclick="filterSelection('football')">Football</p>
+                            <p id="gis" class="filter textProjects" onclick="filterSelection('gis')">GIS</p>
+                            <p id="interactive" class="filter textProjects" onclick="filterSelection('interactive')">Interactive</p>
+                        </div>
+                        <div class = "blog">
+                            <!-- 2024 Mock Draft Comp -->
+                            <a href= "mockDraft24.html" class = "filterDiv football">
+                            <!-- <a href= "files\drafts2024.zip" target="_blank" class = "filterDiv football" download> -->
+                                <img class = "thumbnail d-none d-sm-block" src='images\Detroit.png' alt="Thumbnail19" style = 'object-position: left'>
+                                <div class="blog_content">
+                                    <div class="info">
+                                        <div class="author">
+                                            <img class = "icon d-none d-sm-block" src='images/Icon.png' alt="Matthew Sherman Icon">
+                                            <img class = "iconthumbnail d-block d-sm-none" src='images\Detroit.png' alt="Thumbnail19">
+                                            <div class = "icontext"> 
+                                                Matthew Sherman <br>
+                                                Apr 24, 2024
+                                            </div>
+                                        </div>
+                                        <div class="tags textProjects">
+                                            <p>Tags: </p>
+                                            <p onclick="myEventHandler(event); document.getElementById('football').click()">Football</p>
+                                        </div>
+                                    </div>
+                                    <div class = "posttitle">2024 Mock Draft Competition</div>
+                                    <div class = "headline">Predicting the first round of the NFL Draft with friends.</div>
+                                    <div class = "abstract">Just a friendly competition.</div>
+                                </div>
+                            </a>
+                            <!-- NFL Transactions Immaculate Grid Download -->
+                            <a href= "files\NFLTransactionsDownload.zip" target="_blank" class = "filterDiv football interactive" download>
+                                <img class = "thumbnail d-none d-sm-block" src='images\TransactionsPlot.png' alt="Thumbnail18" style = 'object-position: left'>
+                                <div class="blog_content">
+                                    <div class="info">
+                                        <div class="author">
+                                            <img class = "icon d-none d-sm-block" src='images/Icon.png' alt="Matthew Sherman Icon">
+                                            <img class = "iconthumbnail d-block d-sm-none" src='images/TransactionsPlot.png' alt="Thumbnail18">
+                                            <div class = "icontext"> 
+                                                Matthew Sherman <br>
+                                                Nov 10, 2023
+                                            </div>
+                                        </div>
+                                        <div class="tags textProjects">
+                                            <p>Tags: </p>
+                                            <p onclick="myEventHandler(event); document.getElementById('football').click()">Football</p>
+                                        </div>
+                                    </div>
+                                    <div class = "posttitle">Download: NFL Transactions and Immaculate Grid Guide</div>
+                                    <div class = "headline">The end all be all app for tracking NFL player movement.</div>
+                                    <div class = "abstract">Mission Statement: Made for Python 3.9.12, this app tracks NFL Transactions
+                                        from 2000 - present. Its purpose is to discover which teams often share players and uncover
+                                        trends in player movement. It also seconds as a cheat guide for the Immaculate Grid game.
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- NFL Transactions Immaculate Grid BTC -->
+                            <a href= "files\NFLTransactionsImmaculateGridBTC.pdf" target="_blank" class = "filterDiv btc">
+                                <img class = "thumbnail d-none d-sm-block" src='images\NFLTransactionsImmaculateGridGuideBTCThumbnail.png' alt="Thumbnail17">
+                                <div class="blog_content">
+                                    <div class="info">
+                                        <div class="author">
+                                            <img class = "icon d-none d-sm-block" src='images/Icon.png' alt="Matthew Sherman Icon">
+                                            <img class = "iconthumbnail d-block d-sm-none" src='images/NFLTransactionsImmaculateGridGuideBTCThumbnail.png' alt="Thumbnail17">
+                                            <div class = "icontext"> 
+                                                Matthew Sherman <br>
+                                                Nov 10, 2023 ‧ 1 min read
+                                            </div>
+                                        </div>
+                                        <div class="tags textProjects">
+                                            <p>Tags: </p>
+                                            <p onclick="myEventHandler(event); document.getElementById('btc').click()">BTC</p>
+                                        </div>
+                                    </div>
+                                    <div class = "posttitle">Behind The Code: NFL Transactions and Immaculate Grid Guide</div>
+                                    <div class = "headline">A look at the code and thought process behind this project.</div>
+                                    <div class = "abstract">Friendly reminder: All written code is intended for personal use. 
+                                        Efficiency and neatness are not the focus of these projects.
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- NFL Transactions Immaculate Grid Charts -->
+                            <a href= "files\NFLTransactionsImmaculateGridPics.pdf" target="_blank" class = "filterDiv charts">
+                                <img class = "thumbnail d-none d-sm-block" src='images\ImmaculateGrid.png' alt="Thumbnail16" style = 'object-position: left'>
+                                <div class="blog_content">
+                                    <div class="info">
+                                        <div class="author">
+                                            <img class = "icon d-none d-sm-block" src='images/Icon.png' alt="Matthew Sherman Icon">
+                                            <img class = "iconthumbnail d-block d-sm-none" src='images/ImmaculateGrid.png' alt="Thumbnail16">
+                                            <div class = "icontext"> 
+                                                Matthew Sherman <br>
+                                                Nov 10, 2023 ‧ Images Only
+                                            </div>
+                                        </div>
+                                        <div class="tags textProjects">
+                                            <p>Tags: </p>
+                                            <p onclick="myEventHandler(event); document.getElementById('charts').click()">Charts</p>
+                                        </div>
+                                    </div>
+                                    <div class = "posttitle">Charts! NFL Transactions and Immaculate Grid Guide</div>
+                                    <div class = "headline">Just the pictures!</div>
+                                    <div class = "abstract">Graphical examples of the application in use.
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Sprawlball NFL -->
+                            <a href="files/SprawlBallNFL.pdf" target="_blank" class = "filterDiv football da gis">
+                                <img class = "thumbnail d-none d-sm-block" src='images/JalenHurts.jpg' alt="Thumbnail15">
+                                <div class="blog_content">
+                                    <div class="info">
+                                        <div class="author">
+                                            <img class = "icon d-none d-sm-block" src='images/Icon.png' alt="Matthew Sherman Icon">
+                                            <img class = "iconthumbnail d-block d-sm-none" src='images/JalenHurts.jpg' alt="Thumbnail15">
+                                            <div class = "icontext"> 
+                                                Matthew Sherman <br>
+                                                Sept 1, 2023 ‧ 6 min read
+                                            </div>
+                                        </div>
+                                        <div class="tags textProjects">
+                                            <p>Tags: </p>
+                                            <p onclick="myEventHandler(event); document.getElementById('football').click()">Football</p>
+                                            <p class= "d-none d-sm-block" onclick="myEventHandler(event); document.getElementById('da').click()">Data Analysis</p>
+                                            <p class= "d-block d-sm-none" onclick="myEventHandler(event); document.getElementById('da').click()">DA</p>
+                                            <p onclick="myEventHandler(event); document.getElementById('gis').click()">GIS</p>
+                                        </div>
+                                    </div>
+                                    <div class = "posttitle">Sprawlball NFL - Utilizing GIS for the NFL's Benefit</div>
+                                    <div class = "headline">Inspired by the works of Kirk Goldsberry, Sarah Mallepalle, Ron Yurko, Konstantinos Pelechrinis, and Samuel L. Ventura</div>
+                                    <div class = "abstract">Abstract: Baseball has long used geographical data on a small 
+                                        scale to track information like pitching zones. Recently, the sport's use of geography 
+                                        has grown both in prevalence and scale with the growing popularity of spray charts to 
+                                        plot against the fear-mongering defensive shift. Following baseball was basketball, which 
+                                        now uses geographical data to track shooting zones. The NFL has recently hopped on the geography 
+                                        train, however it gatekeeps its source data behind the veil of Next Gen Statistics. Fortunately, 
+                                        this data can be gathered through the practice of image analysis, allowing it to be analyzed in 
+                                        new ways by independent sources. Which teams use the same play calls on repeat? Whose patterns 
+                                        are redundant and predictable? Did Matt Canada actually keep Kenny Pickett from throwing the ball 
+                                        over the middle of the field? Geographical data will answer all of these questions and more.
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Sprawlball NFL BTC -->
+                            <a href= "files\SprawlBallNFLBTC.pdf" target="_blank" class = "filterDiv da gis btc">
+                                <img class = "thumbnail d-none d-sm-block" src='images\SprawllballNFLBTCThumbnail.png' alt="Thumbnail14">
+                                <div class="blog_content">
+                                    <div class="info">
+                                        <div class="author">
+                                            <img class = "icon d-none d-sm-block" src='images/Icon.png' alt="Matthew Sherman Icon">
+                                            <img class = "iconthumbnail d-block d-sm-none" src='images/SprawllballNFLBTCThumbnail.png' alt="Thumbnail14">
+                                            <div class = "icontext"> 
+                                                Matthew Sherman <br>
+                                                Sept 1, 2023 ‧ 1 min read
+                                            </div>
+                                        </div>
+                                        <div class="tags textProjects">
+                                            <p>Tags: </p>
+                                            <p class= "d-none d-sm-block" onclick="myEventHandler(event); document.getElementById('da').click()">Data Analysis</p>
+                                            <p class= "d-block d-sm-none" onclick="myEventHandler(event); document.getElementById('da').click()">DA</p>
+                                            <p onclick="myEventHandler(event); document.getElementById('gis').click()">GIS</p>
+                                            <p onclick="myEventHandler(event); document.getElementById('btc').click()">BTC</p>
+                                        </div>
+                                    </div>
+                                    <div class = "posttitle">Behind The Code: Sprawlball NFL</div>
+                                    <div class = "headline">A look at the code and thought process behind this project.</div>
+                                    <div class = "abstract">Friendly reminder: All written code is intended for personal use. 
+                                        Efficiency and neatness are not the focus of these projects.
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Sprawlball NFL Charts -->
+                            <a href="files\SprawlBallNFLCharts.pdf" target="_blank" class = "filterDiv charts">
+                                <img class = "thumbnail d-none d-sm-block" src='images\JustinHerbertThumbnail.jpg' alt="Thumbnail13">
+                                <div class="blog_content">
+                                    <div class="info">
+                                        <div class="author">
+                                            <img class = "icon d-none d-sm-block" src='images/Icon.png' alt="Matthew Sherman Icon">
+                                            <img class = "iconthumbnail d-block d-sm-none" src='images/JustinHerbertThumbnail.jpg' alt="Thumbnail13">
+                                            <div class = "icontext"> 
+                                                Matthew Sherman <br>
+                                                Sept 1, 2023 ‧ Images Only
+                                            </div>
+                                        </div>
+                                        <div class="tags textProjects">
+                                            <p>Tags: </p>
+                                            <p onclick="myEventHandler(event); document.getElementById('charts').click()">Charts</p>
+                                        </div>
+                                    </div>
+                                    <div class = "posttitle">Charts! Sprawlball NFL - Utilizing GIS for the NFL's Benefit</div>
+                                    <div class = "headline">Just the charts!</div>
+                                    <div class = "abstract">The graphics for Sprawlball NFL - Utilizing GIS for the NFL's Benefit.
+                                        Inspired by the works of Kirk Goldsberry, Sarah Mallepalle, Ron Yurko, Konstantinos Pelechrinis, and Samuel L. Ventura
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- A New Stat: Quarterback Consistency -->
+                            <a href="files/ANewStatQuarterbackConsistency.pdf" target="_blank" class = "filterDiv football da">
+                                <img class = "thumbnail d-none d-sm-block" src='images/TuaTagovailoa.jpg' alt="Thumbnail12">
+                                <div class="blog_content">
+                                    <div class="info">
+                                        <div class="author">
+                                            <img class = "icon d-none d-sm-block" src='images/Icon.png' alt="Matthew Sherman Icon">
+                                            <img class = "iconthumbnail d-block d-sm-none" src='images/TuaTagovailoa.jpg' alt="Thumbnail12">
+                                            <div class = "icontext"> 
+                                                Matthew Sherman <br>
+                                                Mar 29, 2023 ‧ 7 min read
+                                            </div>
+                                        </div>
+                                        <div class="tags textProjects">
+                                            <p>Tags: </p>
+                                            <p onclick="myEventHandler(event); document.getElementById('football').click()">Football</p>
+                                            <p class= "d-none d-sm-block" onclick="myEventHandler(event); document.getElementById('da').click()">Data Analysis</p>
+                                            <p class= "d-block d-sm-none" onclick="myEventHandler(event); document.getElementById('da').click()">DA</p>
+                                        </div>
+                                    </div>
+                                    <div class = "posttitle">A New Stat: Quarterback Consistency</div>
+                                    <div class = "headline">Is your team's quarterback consistently good or consistently bad? Maybe they're just consistent.</div>
+                                    <div class = "abstract">Abstract: Consistent play is a key to consistent victory. 
+                                        In spite of this, no popular consistency statistic exists in football today. 
+                                        Using a newly created formula, one can easily measure the consistency of a 
+                                        quarterback. While the heart of the formula will remain the same, users can 
+                                        also alter multiple smaller variables to help the rating best fit their needs. 
+                                        Ultimately, this new statistic focusing on measuring the consistency of NFL 
+                                        quarterbacks would be of great aid to any team looking to build a better, 
+                                        stronger, and more consistent roster.
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- A New Stat: Quarterback Consistency BTC -->
+                            <a href= "files/ANewStatQuarterbackConsistencyBTC.pdf" target="_blank" class = "filterDiv da btc">
+                                <img class = "thumbnail d-none d-sm-block" src='images\ANewStatQuarterbackConsistencyBTCThumbnail.png' alt="Thumbnail11">
+                                <div class="blog_content">
+                                    <div class="info">
+                                        <div class="author">
+                                            <img class = "icon d-none d-sm-block" src='images/Icon.png' alt="Matthew Sherman Icon">
+                                            <img class = "iconthumbnail d-block d-sm-none" src='images/ANewStatQuarterbackConsistencyBTCThumbnail.png' alt="Thumbnail11">
+                                            <div class = "icontext"> 
+                                                Matthew Sherman <br>
+                                                Mar 29, 2023 ‧ 1 min read
+                                            </div>
+                                        </div>
+                                        <div class="tags textProjects">
+                                            <p>Tags: </p>
+                                            <p class= "d-none d-sm-block" onclick="myEventHandler(event); document.getElementById('da').click()">Data Analysis</p>
+                                            <p class= "d-block d-sm-none" onclick="myEventHandler(event); document.getElementById('da').click()">DA</p>
+                                            <p onclick="myEventHandler(event); document.getElementById('btc').click()">BTC</p>
+                                        </div>
+                                    </div>
+                                    <div class = "posttitle">Behind The Code: A New Stat: Quarterback Consistency</div>
+                                    <div class = "headline">A look at the code and thought process behind this project.</div>
+                                    <div class = "abstract">Friendly reminder: All written code is intended for personal use. 
+                                        Efficiency and neatness are not the focus of these projects.
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- A New Stat: Quarterback Consistency Charts -->
+                            <a href="files\ANewStatQuarterbackConsistencyCharts.pdf" target="_blank" class = "filterDiv charts">
+                                <img class = "thumbnail d-none d-sm-block" src='images\QBConsistencyTable.png' alt="Thumbnail10">
+                                <div class="blog_content">
+                                    <div class="info">
+                                        <div class="author">
+                                            <img class = "icon d-none d-sm-block" src='images/Icon.png' alt="Matthew Sherman Icon">
+                                            <img class = "iconthumbnail d-block d-sm-none" src='images/QBConsistencyTable.png' alt="Thumbnail10">
+                                            <div class = "icontext"> 
+                                                Matthew Sherman <br>
+                                                Mar 29, 2023 ‧ Images Only
+                                            </div>
+                                        </div>
+                                        <div class="tags textProjects">
+                                            <p>Tags: </p>
+                                            <p onclick="myEventHandler(event); document.getElementById('charts').click()">Charts</p>
+                                        </div>
+                                    </div>
+                                    <div class = "posttitle">Charts! A New Stat: Quarterback Consistency</div>
+                                    <div class = "headline">It's actually tables this time!</div>
+                                    <div class = "abstract">The graphics for A New Stat: Quarterback Consistency
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Scouting Quarterbacks by Scouting Their Wide Recievers -->
+                            <a href="files/ScoutingQuarterbacksByScoutingTheirWideReceivers.pdf" target="_blank" class = "filterDiv football da">
+                                <img class = "thumbnail d-none d-sm-block" src='images/KennyPickett.jpg' alt="Thumbnail9">
+                                <div class="blog_content">
+                                    <div class="info">
+                                        <div class="author">
+                                            <img class = "icon d-none d-sm-block" src='images/Icon.png' alt="Matthew Sherman Icon">
+                                            <img class = "iconthumbnail d-block d-sm-none" src='images/KennyPickett.jpg' alt="Thumbnail9">
+                                            <div class = "icontext"> 
+                                                Matthew Sherman <br>
+                                                Jan 27, 2023 ‧ 11 min read
+                                            </div>
+                                        </div>
+                                        <div class="tags textProjects">
+                                            <p>Tags: </p>
+                                            <p onclick="myEventHandler(event); document.getElementById('football').click()">Football</p>
+                                            <p class= "d-none d-sm-block" onclick="myEventHandler(event); document.getElementById('da').click()">Data Analysis</p>
+                                            <p class= "d-block d-sm-none" onclick="myEventHandler(event); document.getElementById('da').click()">DA</p>
+                                        </div>
+                                    </div>
+                                    <div class = "posttitle">Scouting Quarterbacks by Scouting Their Wide Receivers</div>
+                                    <div class = "headline">Explore the influence that wide receivers have on college quarterbacks.</div>
+                                    <div class = "abstract">Abstract: While reception shares are often overlooked, this 
+                                        project uncovers a statistic that is incredibly useful in narrowing down 
+                                        the field of draftable quarterbacks, allowing NFL teams to determine which 
+                                        quarterback will fit best with their already established receiving corps, 
+                                        which quarterbacks were carried by their WRs in college, and which 
+                                        quarterbacks spread the ball too much, missing opportunities to get the 
+                                        ball into the hands of their greatest playmakers.
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- QBs By WRs Charts BTC -->
+                            <a href= "files\ScoutingQuarterbacksByScoutingTheirWideReceiversBTC.pdf" target="_blank" class = "filterDiv da btc">
+                                <img class = "thumbnail d-none d-sm-block" src='images\ScoutingQBsByWRsBTCThumbnail.png' alt="Thumbnail8">
+                                <div class="blog_content">
+                                    <div class="info">
+                                        <div class="author">
+                                            <img class = "icon d-none d-sm-block" src='images/Icon.png' alt="Matthew Sherman Icon">
+                                            <img class = "iconthumbnail d-block d-sm-none" src='images/ScoutingQBsByWRsBTCThumbnail.png' alt="Thumbnail8">
+                                            <div class = "icontext"> 
+                                                Matthew Sherman <br>
+                                                Jan 27, 2023 ‧ 2 min read
+                                            </div>
+                                        </div>
+                                        <div class="tags textProjects">
+                                            <p>Tags: </p>
+                                            <p class= "d-none d-sm-block" onclick="myEventHandler(event); document.getElementById('da').click()">Data Analysis</p>
+                                            <p class= "d-block d-sm-none" onclick="myEventHandler(event); document.getElementById('da').click()">DA</p>
+                                            <p onclick="myEventHandler(event); document.getElementById('btc').click()">BTC</p>
+                                        </div>
+                                    </div>
+                                    <div class = "posttitle">Behind The Code: Scouting Quarterbacks by Scouting Their Wide Receivers</div>
+                                    <div class = "headline">A look at the code and thought process behind this project.</div>
+                                    <div class = "abstract">Friendly reminder: All written code is intended for personal use. 
+                                        Efficiency and neatness are not the focus of these projects.
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- QBs By WRs Charts -->
+                            <a href="files/ScoutingQuarterbacksByScoutingTheirWideReceiversCharts.pdf" target="_blank" class = "filterDiv charts">
+                                <img class = "thumbnail d-none d-sm-block" src='images/Chart_ReceptionShare.jpg' alt="Thumbnail7">
+                                <div class="blog_content">
+                                    <div class="info">
+                                        <div class="author">
+                                            <img class = "icon d-none d-sm-block" src='images/Icon.png' alt="Matthew Sherman Icon">
+                                            <img class = "iconthumbnail d-block d-sm-none" src='images/Chart_ReceptionShare.jpg' alt="Thumbnail7">
+                                            <div class = "icontext"> 
+                                                Matthew Sherman <br>
+                                                Jan 27, 2023 ‧ Images Only
+                                            </div>
+                                        </div>
+                                        <div class="tags textProjects">
+                                            <p>Tags: </p>
+                                            <p onclick="myEventHandler(event); document.getElementById('charts').click()">Charts</p>
+                                        </div>
+                                    </div>
+                                    <div class = "posttitle">Charts! Scouting Quarterbacks by Scouting Their Wide Receivers</div>
+                                    <div class = "headline">Just the charts!</div>
+                                    <div class = "abstract">The graphics for Scouting Quarterbacks by Scouting Their Wide Receivers
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- The Data Science of Scouting Quarterbacks Part 1 -->
+                            <a href="files/TheDataScienceOfScoutingQuarterbacksPart1.pdf" target="_blank" class = "filterDiv football da">
+                                <img class = "thumbnail d-none d-sm-block" src='images/TomBrady.jpg' alt="Thumbnail6">
+                                <div class="blog_content">
+                                    <div class="info">
+                                        <div class="author">
+                                            <img class = "icon d-none d-sm-block" src='images/Icon.png' alt="Matthew Sherman Icon">
+                                            <img class = "iconthumbnail d-block d-sm-none" src='images/TomBrady.jpg' alt="Thumbnail6">
+                                            <div class = "icontext"> 
+                                                Matthew Sherman <br>
+                                                Sept 28, 2022 ‧ 4 min read
+                                            </div>
+                                        </div>
+                                        <div class="tags textProjects">
+                                            <p>Tags: </p>
+                                            <p onclick="myEventHandler(event); document.getElementById('football').click()">Football</p>
+                                            <p class= "d-none d-sm-block" onclick="myEventHandler(event); document.getElementById('da').click()">Data Analysis</p>
+                                            <p class= "d-block d-sm-none" onclick="myEventHandler(event); document.getElementById('da').click()">DA</p>
+                                        </div>
+                                    </div>
+                                    <div class = "posttitle">The Data Science of Scouting Quarterbacks: Part 1</div>
+                                    <div class = "headline">Part 1: Scouting Quarterbacks by Scouting Wide Receivers</div>
+                                    <div class = "abstract">Abstract: Quarterback is the most important position in sports. 
+                                        Despite this, it remains a notoriously difficult position to scout. Instead of scouting 
+                                        quarterbacks directly, explore using the easier-to-scout wide receiver position to evaluate 
+                                        our future signal callers.
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- The Data Science of Scouting Quarterbacks Part 2 -->
+                            <a href="files/TheDataScienceOfScoutingQuarterbacksPart2.pdf" target="_blank" class = "filterDiv football da">
+                                <img class = "thumbnail d-none d-sm-block" src='images/AndrewLuck.jpg' alt="Thumbnail5">
+                                <div class="blog_content">
+                                    <div class="info">
+                                        <div class="author">
+                                            <img class = "icon d-none d-sm-block" src='images/Icon.png' alt="Matthew Sherman Icon">
+                                            <img class = "iconthumbnail d-block d-sm-none" src='images/AndrewLuck.jpg' alt="Thumbnail5">
+                                            <div class = "icontext"> 
+                                                Matthew Sherman <br>
+                                                Sept 28, 2022 ‧ 4 min read
+                                            </div>
+                                        </div>
+                                        <div class="tags textProjects">
+                                            <p>Tags: </p>
+                                            <p onclick="myEventHandler(event); document.getElementById('football').click()">Football</p>
+                                            <p class= "d-none d-sm-block" onclick="myEventHandler(event); document.getElementById('da').click()">Data Analysis</p>
+                                            <p class= "d-block d-sm-none" onclick="myEventHandler(event); document.getElementById('da').click()">DA</p>
+                                        </div>
+                                    </div>
+                                    <div class = "posttitle">The Data Science of Scouting Quarterbacks: Part 2</div>
+                                    <div class = "headline">Part 2: Where Should You Draft Your Quarterback?</div>
+                                    <div class = "abstract">Abstract: At what draft pick have teams had the most success
+                                        drafting quarterbacks? When should a team trade up for a quarterback? Is it 
+                                        really worth it to move up to pick 32 and secure that fifth year option on a
+                                        quarterback with a mid-round grade? This section explores how quarterback value 
+                                        aligns with draft pick value.
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- The Data Science of Scouting Quarterbacks Part 3 -->
+                            <a href="files/TheDataScienceOfScoutingQuarterbacksPart3.pdf" target="_blank" class = "filterDiv football da">
+                                <img class = "thumbnail d-none d-sm-block" src='images/KylerMurray.jpg' alt="Thumbnail4">
+                                <div class="blog_content">
+                                    <div class="info">
+                                        <div class="author">
+                                            <img class = "icon d-none d-sm-block" src='images/Icon.png' alt="Matthew Sherman Icon">
+                                            <img class = "iconthumbnail d-block d-sm-none" src='images/KylerMurray.jpg' alt="Thumbnail4">
+                                            <div class = "icontext"> 
+                                                Matthew Sherman <br>
+                                                Sept 28, 2022 ‧ 6 min read
+                                            </div>
+                                        </div>
+                                        <div class="tags textProjects">
+                                            <p>Tags: </p>
+                                            <p onclick="myEventHandler(event); document.getElementById('football').click()">Football</p>
+                                            <p class= "d-none d-sm-block" onclick="myEventHandler(event); document.getElementById('da').click()">Data Analysis</p>
+                                            <p class= "d-block d-sm-none" onclick="myEventHandler(event); document.getElementById('da').click()">DA</p>
+                                        </div>
+                                    </div>
+                                    <div class = "posttitle">The Data Science of Scouting Quarterbacks: Part 3</div>
+                                    <div class = "headline">Part 3: When Should You Move On From a Quarterback?</div>
+                                    <div class = "abstract">Abstract: Teams often hold on to starting quarterbacks for 
+                                        far too long. This leads to far too many decade-long Super Bowl appearance droughts. 
+                                        Ultimately, many teams and quarterbacks alike would be better off with earlier divorces. 
+                                        That being said, when exactly should you move on from your quarterback?
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- The Data Science of Scouting Quarterbacks Part 4 -->
+                            <a href="files/TheDataScienceOfScoutingQuarterbacksPart4.pdf" target="_blank" class = "filterDiv football da">
+                                <img class = "thumbnail d-none d-sm-block" src='images/DraftStage.jpg' alt="Thumbnail3">
+                                <div class="blog_content">
+                                    <div class="info">
+                                        <div class="author">
+                                            <img class = "icon d-none d-sm-block" src='images/Icon.png' alt="Matthew Sherman Icon">
+                                            <img class = "iconthumbnail d-block d-sm-none" src='images/DraftStage.jpg' alt="Thumbnail3">
+                                            <div class = "icontext"> 
+                                                Matthew Sherman <br>
+                                                Sept 28, 2022 ‧ 4 min read
+                                            </div>
+                                        </div>
+                                        <div class="tags textProjects">
+                                            <p>Tags: </p>
+                                            <p onclick="myEventHandler(event); document.getElementById('football').click()">Football</p>
+                                            <p class= "d-none d-sm-block" onclick="myEventHandler(event); document.getElementById('da').click()">Data Analysis</p>
+                                            <p class= "d-block d-sm-none" onclick="myEventHandler(event); document.getElementById('da').click()">DA</p>
+                                        </div>
+                                    </div>
+                                    <div class = "posttitle">The Data Science of Scouting Quarterbacks: Part 4</div>
+                                    <div class = "headline">Part 4: Drafting Around Your Quarterback</div>
+                                    <div class = "abstract">Abstract: It takes an incredibly rare quarterback to be able to win
+                                        with limited surrounding talent. By taking a look at the draft strategies followed by 
+                                        Super Bowl winning teams, we can learn how to put young quarterbacks into friendlier 
+                                        situations. Ultimately, altering one's draft strategy may just turn a talented
+                                        quarterback into a Super Bowl quarterback.
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- The Data Science of Scouting Quarterbacks Part 5 -->
+                            <a href="files/TheDataScienceOfScoutingQuarterbacksPart5.pdf" target="_blank" class = "filterDiv football da">
+                                <img class = "thumbnail d-none d-sm-block" src='images/NFLCombineHeight.jpg' alt="Thumbnail2">
+                                <div class="blog_content">
+                                    <div class="info">
+                                        <div class="author">
+                                            <img class = "icon d-none d-sm-block" src='images/Icon.png' alt="Matthew Sherman Icon">
+                                            <img class = "iconthumbnail d-block d-sm-none" src='images/NFLCombineHeight.jpg' alt="Thumbnail2">
+                                            <div class = "icontext"> 
+                                                Matthew Sherman <br>
+                                                Sept 28, 2022 ‧ 2 min read
+                                            </div>
+                                        </div>
+                                        <div class="tags textProjects">
+                                            <p>Tags: </p>
+                                            <p onclick="myEventHandler(event); document.getElementById('football').click()">Football</p>
+                                            <p class= "d-none d-sm-block" onclick="myEventHandler(event); document.getElementById('da').click()">Data Analysis</p>
+                                            <p class= "d-block d-sm-none" onclick="myEventHandler(event); document.getElementById('da').click()">DA</p>
+                                        </div>
+                                    </div>
+                                    <div class = "posttitle">The Data Science of Scouting Quarterbacks: Part 5</div>
+                                    <div class = "headline">Part 5: Quick Graphs</div>
+                                    <div class = "abstract">Abstract: Not all stats warrant a full section of discussion.
+                                        This section explores quick and easy data analysis on topics such as player value vs 
+                                        pick drafted, QB value vs height, QB value vs 40-time, and so much more.
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Charts! The Data Science of Scouting Quarterbacks -->
+                            <a href="files/TheDataScienceOfScoutingQuarterbacksCharts.pdf" target="_blank" class = "filterDiv charts">
+                                <img class = "thumbnail d-none d-sm-block" src='images/Chart_RoundHistogram.png' alt="Thumbnail1">
+                                <div class="blog_content">
+                                    <div class="info">
+                                        <div class="author">
+                                            <img class = "icon d-none d-sm-block" src='images/Icon.png' alt="Matthew Sherman Icon">
+                                            <img class = "iconthumbnail d-block d-sm-none" src='images/Chart_RoundHistogram.png' alt="Thumbnail1">
+                                            <div class = "icontext"> 
+                                                Matthew Sherman <br>
+                                                Sept 28, 2022 ‧ Images Only
+                                            </div>
+                                        </div>
+                                        <div class="tags textProjects">
+                                            <p>Tags: </p>
+                                            <p onclick="myEventHandler(event); document.getElementById('charts').click()">Charts</p>
+                                        </div>
+                                    </div>
+                                    <div class = "posttitle">Charts! The Data Science of Scouting Quarterbacks</div>
+                                    <div class = "headline">Just the charts!</div>
+                                    <div class = "abstract">The graphics for The Data Science of Scouting Quarterbacks (all parts)
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+            // Add the "show" class to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+                RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+            }
+        }
+
+        function myEventHandler(e) {
+            if (!e)
+                e = window.event;
+
+            //IE9 & Other Browsers
+            if (e.stopPropagation) {
+                e.stopPropagation();
+                e.preventDefault();
+            }
+            //IE8 and Lower
+            else {
+                e.cancelBubble = true;
+            }
+        }
+
+        // Show filtered elements
+        function AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        // Hide elements that are not selected
+        function RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        } 
+
+        // Add active class to the current control button (highlight it)
+        var filters = document.getElementsByClassName("filters");
+        var filter = filters[0].getElementsByClassName("filter");
+        for (var i = 0; i < filter.length; i++) {
+            filter[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+</html>
